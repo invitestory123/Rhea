@@ -55,11 +55,11 @@ export function Hero() {
           transition={{ duration: 1.4, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto mt-4 max-w-md text-4xl leading-tight font-light text-pine uppercase sm:text-5xl"
         >
-          {couple.brideShort}
+          {couple.groomShort}
           <span className="mx-3 inline-block font-display text-2xl lowercase italic text-pine/70">
             and
           </span>
-          {couple.groomShort}
+          {couple.brideShort}
         </motion.h1>
 
         <motion.div
@@ -82,9 +82,11 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={opened ? { opacity: 1 } : false}
           transition={{ duration: 1, delay: 1.15 }}
-          className="mt-3 font-display text-3xl tracking-[0.18em] text-gold"
+          className="mt-3 font-display text-2xl tracking-[0.12em] text-gold sm:text-3xl"
         >
-          {event.dateLabel}
+          {("heroDateLabel" in event && typeof (event as any).heroDateLabel === "string"
+            ? (event as any).heroDateLabel
+            : event.dateLabel)}
         </motion.p>
 
         <motion.p

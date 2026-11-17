@@ -13,13 +13,13 @@ import { OpenGate } from "@/components/wedding/OpenGate";
 import { invitation } from "@/config/invitation";
 
 const { couple, event, venue, meta } = invitation;
-const title = meta?.title ?? `${couple.brideShort} & ${couple.groomShort} — Wedding Invitation`;
+const title = meta?.title ?? `${couple.groomShort} & ${couple.brideShort} — Wedding Invitation`;
 const description =
   meta?.description ??
-  `${couple.bride} and ${couple.groom} invite you to celebrate their wedding on ${event.dateLabel} at ${venue.name}, ${venue.address}.`;
+  `${couple.groom} and ${couple.bride} invite you to celebrate their wedding from 11th to 13th February 2027 at ${venue.name}, ${venue.address}.`;
 const ogUrl = meta?.url ?? "/";
 const ogImage = meta?.image ?? "https://media.invitestory.in/sage-parchment/og-image.jpg";
-const siteName = meta?.siteName ?? `${couple.brideShort} & ${couple.groomShort} Wedding`;
+const siteName = meta?.siteName ?? `${couple.groomShort} & ${couple.brideShort} Wedding`;
 
 export const Route = createFileRoute("/")({
   head: () => ({

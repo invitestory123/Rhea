@@ -77,25 +77,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Rhea & Shameek — Wedding Invitation" },
-      { name: "description", content: "A digital wedding invitation for Rhea & Shameek." },
+      { title: "Shameek & Rhea — Wedding Invitation" },
+      { name: "description", content: "A digital wedding invitation for Shameek & Rhea." },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Rhea & Shameek — Wedding Invitation" },
+      { property: "og:title", content: "Shameek & Rhea — Wedding Invitation" },
       {
         property: "og:description",
         content:
-          "Rhea Badyal and Shameek Dave cordially invite you to celebrate their wedding on February 12, 2027 at Mayfair Lake Resort, Raipur.",
+          "Shameek Dave and Rhea Badyal cordially invite you to celebrate their wedding from 11th to 13th February 2027 at Mayfair Lake Resort, Raipur.",
       },
       { property: "og:image", content: "https://media.invitestory.in/sage-parchment/og-image.jpg" },
-      { property: "og:image:alt", content: "Rhea & Shameek Wedding Invitation" },
+      { property: "og:image:alt", content: "Shameek & Rhea Wedding Invitation" },
       { property: "og:url", content: "/" },
-      { property: "og:site_name", content: "Rhea & Shameek Wedding" },
+      { property: "og:site_name", content: "Shameek & Rhea Wedding" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Rhea & Shameek — Wedding Invitation" },
+      { name: "twitter:title", content: "Shameek & Rhea — Wedding Invitation" },
       {
         name: "twitter:description",
         content:
-          "Rhea Badyal and Shameek Dave cordially invite you to celebrate their wedding on February 12, 2027 at Mayfair Lake Resort, Raipur.",
+          "Shameek Dave and Rhea Badyal cordially invite you to celebrate their wedding from 11th to 13th February 2027 at Mayfair Lake Resort, Raipur.",
       },
       { name: "twitter:image", content: "https://media.invitestory.in/sage-parchment/og-image.jpg" },
     ],
