@@ -12,6 +12,7 @@ const UNITS: { key: keyof Omit<TimeLeft, "done">; label: string }[] = [
 ];
 
 export function Countdown() {
+  const { event } = invitation;
   const [left, setLeft] = useState<TimeLeft | null>(null);
 
   useEffect(() => {
@@ -54,9 +55,10 @@ export function Countdown() {
           ))}
         </div>
 
-        <p className="mt-6 font-display text-lg italic text-ink/70">
-          {invitation.event.dayLabel}, {invitation.event.timeLabel}
-        </p>
+        <div className="mt-6 font-display text-lg italic text-ink/70 leading-relaxed">
+          <p>{event.dateLabel}</p>
+          <p className="mt-0.5">{event.dayLabel}</p>
+        </div>
       </Reveal>
     </section>
   );

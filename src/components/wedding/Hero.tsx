@@ -36,24 +36,30 @@ export function Hero() {
       {/* Fixed bottom gradient to guarantee seamless transition to next section */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-72 bg-gradient-to-t from-parchment via-parchment/95 via-60% to-transparent" />
 
+      {/* Top kicker positioned gracefully inside the upper arch dome */}
       <motion.div
         style={{ y: textY }}
-        className="relative z-20 mt-auto w-full px-6 pt-24 pb-8 text-center"
+        className="relative z-20 w-full px-6 pt-12 sm:pt-16 text-center"
       >
         <motion.p
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: -10 }}
           animate={opened ? { opacity: 1, y: 0 } : false}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-[0.7rem] tracking-[0.42em] text-ink/70 uppercase"
+          className="mx-auto max-w-xs text-[0.68rem] tracking-[0.4em] text-pine/80 uppercase font-medium"
         >
           {invite.kicker}
         </motion.p>
+      </motion.div>
 
+      <motion.div
+        style={{ y: textY }}
+        className="relative z-20 mt-auto w-full px-6 pt-8 pb-8 text-center"
+      >
         <motion.h1
           initial={{ opacity: 0, y: 24, letterSpacing: "0.4em" }}
           animate={opened ? { opacity: 1, y: 0, letterSpacing: "0.16em" } : false}
           transition={{ duration: 1.4, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-          className="mx-auto mt-4 max-w-md text-4xl leading-tight font-light text-pine uppercase sm:text-5xl"
+          className="mx-auto max-w-md text-4xl leading-tight font-light text-pine uppercase sm:text-5xl"
         >
           {couple.groomShort}
           <span className="mx-3 inline-block font-display text-2xl lowercase italic text-pine/70">

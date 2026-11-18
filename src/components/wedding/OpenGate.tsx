@@ -85,7 +85,7 @@ function Opener({ opened, onOpen }: { opened: boolean; onOpen: () => void }) {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="text-[0.62rem] tracking-[0.45em] text-gold uppercase"
+          className="mx-auto max-w-[220px] text-[0.52rem] sm:text-[0.58rem] tracking-[0.2em] text-gold uppercase"
         >
           {invite.kicker}
         </motion.p>
@@ -121,9 +121,9 @@ function Opener({ opened, onOpen }: { opened: boolean; onOpen: () => void }) {
 
         <motion.h2
           initial={{ opacity: 0, y: 16, letterSpacing: "0.5em" }}
-          animate={{ opacity: 1, y: 0, letterSpacing: "0.22em" }}
+          animate={{ opacity: 1, y: 0, letterSpacing: "0.18em" }}
           transition={{ duration: 1.5, delay: 0.6, ease: EASE }}
-          className="mt-9 text-lg font-light text-parchment uppercase sm:text-xl"
+          className="mt-8 mx-auto max-w-[250px] text-base sm:text-lg font-light text-parchment uppercase tracking-[0.18em]"
         >
           {couple.groomShort} &amp; {couple.brideShort}
         </motion.h2>
@@ -132,7 +132,7 @@ function Opener({ opened, onOpen }: { opened: boolean; onOpen: () => void }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.9 }}
-          className="mt-3 font-display text-base tracking-[0.16em] text-gold"
+          className="mt-3 mx-auto max-w-[210px] font-display text-xs sm:text-sm tracking-[0.05em] text-gold leading-snug"
         >
           {("gateDateLabel" in event && typeof (event as any).gateDateLabel === "string"
             ? (event as any).gateDateLabel
