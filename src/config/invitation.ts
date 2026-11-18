@@ -32,10 +32,6 @@ export const invitation = {
   },
   itinerary: [
     {
-      date: "30th Jan",
-      events: "Engagement at Bhatinda",
-    },
-    {
       date: "11th Feb",
       events: "Mehendi, Sangeet",
     },
