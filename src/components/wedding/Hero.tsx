@@ -36,16 +36,16 @@ export function Hero() {
       {/* Fixed bottom gradient to guarantee seamless transition to next section */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-72 bg-gradient-to-t from-parchment via-parchment/95 via-60% to-transparent" />
 
-      {/* Top kicker positioned gracefully inside the upper arch dome */}
+      {/* Top kicker positioned gracefully inside the upper arch dome right above the feather */}
       <motion.div
-        style={{ y: textY }}
-        className="relative z-20 w-full px-6 pt-12 sm:pt-16 text-center"
+        style={{ y: imgY }}
+        className="pointer-events-none absolute inset-x-0 top-[26.5svh] z-20 px-6 text-center"
       >
         <motion.p
-          initial={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0, y: -8 }}
           animate={opened ? { opacity: 1, y: 0 } : false}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mx-auto max-w-xs text-[0.68rem] tracking-[0.4em] text-pine/80 uppercase font-medium"
+          className="mx-auto max-w-sm text-[0.72rem] sm:text-[0.78rem] tracking-[0.24em] text-pine font-bold uppercase"
         >
           {invite.kicker}
         </motion.p>
