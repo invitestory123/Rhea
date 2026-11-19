@@ -55,13 +55,13 @@ export const invitation = {
   },
   story: [],
   blessing: {
-    line: "May your intentions be one, may your hearts beat as one.",
+    line: "Expect happy tears, loud laughter, endless pictures, embarrassing dance performances and memories that will last forever!",
     translation:
-      "Two families, one thread of gold — and a lifetime of happiness made luminous together.",
-    source: "A blessing from both families",
+      "We have a wedding, a lot of excitement, and absolutely no plans of behaving ourselves. Come celebrate with us!",
+    source: "",
   },
   footer: {
-    families: "With love & warm wishes from the Dave & Badyal Families",
+    families: "With love & warm wishes from the Dave & Badyal Family",
     contacts: [] as { name: string; phone: string }[],
   },
   meta: {

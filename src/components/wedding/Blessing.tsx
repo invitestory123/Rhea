@@ -9,10 +9,12 @@ export function Blessing() {
       <Reveal className="mx-auto max-w-md text-center">
         <div className="mx-auto w-20 gold-rule" />
         <p className="mt-8 font-display text-2xl leading-relaxed text-pine">{blessing.line}</p>
-        <p className="mt-5 font-display text-lg leading-relaxed italic text-ink/75">
-          “{blessing.translation}”
+        <p className="mt-6 font-display text-lg leading-relaxed italic text-ink/75">
+          {blessing.translation}
         </p>
-        <p className="mt-4 text-[0.6rem] tracking-[0.3em] text-gold uppercase">{blessing.source}</p>
+        {blessing.source ? (
+          <p className="mt-4 text-[0.6rem] tracking-[0.3em] text-gold uppercase">{blessing.source}</p>
+        ) : null}
         <div className="mx-auto mt-8 w-20 gold-rule" />
       </Reveal>
     </section>

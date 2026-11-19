@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { X } from "lucide-react";
-const heroArch = "https://media.invitestory.in/sage-parchment/src/assets/hero-arch.jpg";
-const story1 = "https://media.invitestory.in/sage-parchment/src/assets/story-1.jpg";
-const story2 = "https://media.invitestory.in/sage-parchment/src/assets/story-2.jpg";
-const story3 = "https://media.invitestory.in/sage-parchment/src/assets/story-3.jpg";
+import moment1 from "@/assets/moment-1.jpg";
+import moment2 from "@/assets/moment-2.jpg";
+import moment3 from "@/assets/moment-3.jpg";
+import moment4 from "@/assets/moment-4.jpg";
 import { Reveal } from "./Reveal";
 
 const PHOTOS = [
-  { src: story2, alt: "The couple in a lotus garden" },
-  { src: story1, alt: "The couple seated under a golden mandap" },
-  { src: story3, alt: "Mehendi and haldi celebrations" },
-  { src: heroArch, alt: "The couple beneath an ornate golden arch" },
+  { src: moment1, alt: "Shameek and Rhea on the staircase" },
+  { src: moment2, alt: "Shameek and Rhea in festive celebration" },
+  { src: moment3, alt: "Shameek and Rhea walking together" },
+  { src: moment4, alt: "Shameek and Rhea smiling" },
 ];
 
 export function Gallery() {
